@@ -10,11 +10,8 @@ int main(){
 	woordenboek boek;
 	initWoordenboek(&boek, 1);
 
-	//Will temporarily hold values to store in the woordenboek
-	woordenboekEntry tmp;
-	editWoordenboekEntry(&tmp, "Muis", "Mouse");
-
-	addToWoordenboek(&boek, tmp);
+	//Fills boek according to the contents found in the dat file
+	writeFileToWoordenboek(&boek);
 
 	//Main loop, we get input and handle the command continuously in here
 	while (1){

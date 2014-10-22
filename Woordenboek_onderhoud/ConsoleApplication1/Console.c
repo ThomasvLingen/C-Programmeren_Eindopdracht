@@ -53,6 +53,11 @@ void addHandler(woordenboek *boek){
 	nullTerminate(&buff2);
 	capitaliseWord(&buff2);
 
+	if (strchr(buff1, '=') != NULL || strchr(buff2, '=') != NULL){
+		printf("You entered a \'=\' somewhere along the way and as such, we will not add this to the dictionary\n\n");
+		return;
+	}
+
 	editWoordenboekEntry(&tmp, buff1, buff2);
 
 	addToWoordenboek(boek, tmp);
