@@ -79,12 +79,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Console.c" />
+    <ClCompile Include="FileIO.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="Util.c" />
     <ClCompile Include="Woordenboek.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
+    <ClInclude Include="FileIO.h" />
     <ClInclude Include="Util.h" />
     <ClInclude Include="Woordenboek.h" />
   </ItemGroup>

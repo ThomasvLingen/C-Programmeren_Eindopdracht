@@ -20,7 +20,9 @@ void handleCommand(char command[], woordenboek *boek){
 
 //Handles quitting
 void quitHandler(woordenboek *boek){
-	//TO DO: Make sure it's written to a file
+	//Writes the whole thing to a file
+	writeWoordenboekToFile(boek);
+
 	//Makes sure the allocated memory is freed again
 	free(boek->array);
 	exit();

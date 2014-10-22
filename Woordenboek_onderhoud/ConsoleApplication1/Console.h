@@ -3,6 +3,7 @@
 
 #include "Woordenboek.h"
 #include "Util.h"
+#include "FileIO.h"
 
 void handleCommand(char command[], woordenboek *boek);
 

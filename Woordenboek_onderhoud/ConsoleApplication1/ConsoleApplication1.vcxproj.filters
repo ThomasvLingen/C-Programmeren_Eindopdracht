@@ -5,10 +5,12 @@
     <ClCompile Include="Woordenboek.c" />
     <ClCompile Include="Console.c" />
     <ClCompile Include="Util.c" />
+    <ClCompile Include="FileIO.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Woordenboek.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Util.h" />
+    <ClInclude Include="FileIO.h" />
   </ItemGroup>
 </Project>
