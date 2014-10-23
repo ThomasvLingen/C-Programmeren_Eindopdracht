@@ -12,7 +12,8 @@ int main(){
 
 	//Fills boek according to the contents found in the dat file
 	writeFileToWoordenboek(&boek);
-
+	
+	printf("Welcome to the dictionary, in order to get a list of commands type \"help\"\n");
 	//Main loop, we get input and handle the command continuously in here
 	while (1){
 		fgets(buff1, 29, stdin);

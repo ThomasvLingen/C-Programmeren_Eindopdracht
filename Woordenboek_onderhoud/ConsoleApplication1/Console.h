@@ -13,3 +13,4 @@ void printHandler(woordenboek *boek);
 void addHandler(woordenboek *boek);
 void removeHandler(woordenboek *boek);
 void editHandler(woordenboek *boek);
+void helpHandler(woordenboek *boek);
