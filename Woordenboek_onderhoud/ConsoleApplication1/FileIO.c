@@ -1,3 +1,6 @@
+/*
+	This file holds all functions related to writing or reading from a file.
+*/
 #include "FileIO.h"
 
 //Makes a file if there isn't already one and writes the contents of the woordenboek to it

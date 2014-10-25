@@ -1,3 +1,7 @@
+/*
+	This file holds all the functions related to handling commands given by the user through the console.
+*/
+
 #include "Console.h"
 
 //I can't use a switch here so a giant if else if ladder will do
@@ -125,5 +129,5 @@ void helpHandler(woordenboek *boek){
 	printf("\t\"add\" will add a word to the dictionary\n");
 	printf("\t\"remove\" will remove a word from the dictionary\n");
 	printf("\t\"edit\" will edit a word's translation from the dictionary\n");
-	printf("\t\"quit\" will save all the changes you made and quit the program\n");
+	printf("\t\"quit\" will save all the changes you made and quit the program\n\n");
 }

@@ -1,3 +1,7 @@
+/*
+	This file holds all functions related to manipulating an instance of the woordenboek struct.
+*/
+
 #include "Woordenboek.h"
 
 void editWoordenboekEntry(woordenboekEntry *target, char woord[], char vertaling[]){

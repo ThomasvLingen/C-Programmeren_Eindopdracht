@@ -1,3 +1,8 @@
+/*
+	This file holds all functions that weren't important enough or relevant enough to get their own file.
+	You can see this as a pool of general utility functions.
+*/
+
 #include "Util.h"
 
 //Replaces the newline at the end of a string retrieved through fgets with a \0
