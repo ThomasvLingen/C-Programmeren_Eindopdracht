@@ -25,29 +25,6 @@ void addToWoordenboek(woordenboek *a, woordenboekEntry toAdd){
 	a->inUse++;
 }
 
-void removeFromWoordenboek(woordenboek *a, int indexToRemove){
-	woordenboekEntry* temp = (woordenboekEntry *)malloc((a->totalSize - 1) * sizeof(woordenboekEntry));//Make a temporary array of entries
-
-	memcpy(temp, a->array, (indexToRemove)* sizeof(woordenboekEntry));//Copy everything before the entry we want removed into temp
-	memcpy(temp + indexToRemove,
-		a->array + indexToRemove + 1,
-		(a->inUse - indexToRemove - 1) * sizeof(woordenboekEntry));//Copy everything after the removed entry into temp
-
-	//Realloc the woordenboek's array and copy the temp array's contents to it
-	a->array = (woordenboekEntry *)realloc(a->array, ((a->totalSize - 1) * sizeof(woordenboekEntry)));
-	memcpy(a->array, temp, (a->totalSize - 1) * sizeof(woordenboekEntry));
-
-	//Update the woordenboek's properties
-	a->totalSize--;
-	a->inUse--;
-
-	free(temp);
-}
-
-void editFromWoordenboek(woordenboek *a, int indexToEdit, char newTranslation[]){
-	strcpy_s(a->array[indexToEdit].vertaling, strlen(newTranslation) + 1, newTranslation);
-}
-
 void printWoordenboek(woordenboek *a){
 	int i;
 	printf("All words currently present in the dictionary:\n");

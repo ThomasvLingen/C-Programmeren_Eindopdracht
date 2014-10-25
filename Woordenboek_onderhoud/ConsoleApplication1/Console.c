@@ -1,5 +1,5 @@
 /*
-	This file holds all the functions related to handling commands given by the user through the console.
+This file holds all the functions related to handling commands given by the user through the console.
 */
 
 #include "Console.h"
@@ -9,17 +9,23 @@
 void handleCommand(char command[], woordenboek *boek){
 	if (strcmp(command, "quit") == 0){
 		quitHandler(boek);
-	}else if (strcmp(command, "print") == 0){
+	}
+	else if (strcmp(command, "print") == 0){
 		printHandler(boek);
-	}else if (strcmp(command, "add") == 0){
+	}
+	else if (strcmp(command, "add") == 0){
 		addHandler(boek);
-	}else if (strcmp(command, "remove") == 0){
+	}
+	else if (strcmp(command, "remove") == 0){
 		removeHandler(boek);
-	}else if (strcmp(command, "edit") == 0){
+	}
+	else if (strcmp(command, "edit") == 0){
 		editHandler(boek);
-	}else if (strcmp(command, "help") == 0){
+	}
+	else if (strcmp(command, "help") == 0){
 		helpHandler(boek);
-	} else {
+	}
+	else {
 		printf("I don't recognise the given command \"%s\"\n\n", command);
 	}
 }

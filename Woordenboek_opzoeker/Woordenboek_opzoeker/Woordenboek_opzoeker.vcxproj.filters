@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Console.c" />
+    <ClCompile Include="FileIO.c" />
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="Util.c" />
+    <ClCompile Include="Woordenboek.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="FileIO.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Woordenboek.h" />
+  </ItemGroup>
+</Project>

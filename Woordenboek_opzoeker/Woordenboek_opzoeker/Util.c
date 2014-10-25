@@ -22,3 +22,16 @@ void unCaps(char str[]){
 void capitaliseWord(char str[]){
 	str[0] = toupper(str[0]);
 }
+
+//This gets the next space index in a string
+//a -1 returned means that there is no next space
+int getNextSpaceIndex(char str[]){
+	int i;
+
+	for (i = 0; i < strlen(str); i++){
+		if (str[i] == ' '){
+			return i;
+		}
+	}
+	return -1;
+}
