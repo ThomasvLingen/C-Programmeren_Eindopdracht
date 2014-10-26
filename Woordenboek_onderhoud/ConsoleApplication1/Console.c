@@ -132,8 +132,8 @@ void editHandler(woordenboek *boek){
 void helpHandler(woordenboek *boek){
 	printf("Here's a list of possible commands:\n");
 	printf("\t\"print\" will print the current contents of the dictionary.\n");
-	printf("\t\"add\" will add a word to the dictionary\n");
-	printf("\t\"remove\" will remove a word from the dictionary\n");
-	printf("\t\"edit\" will edit a word's translation from the dictionary\n");
-	printf("\t\"quit\" will save all the changes you made and quit the program\n\n");
+	printf("\t\"add\" will add a word to the dictionary.\n");
+	printf("\t\"remove\" will remove a word from the dictionary.\n");
+	printf("\t\"edit\" will edit a word's translation from the dictionary.\n");
+	printf("\t\"quit\" will save all the changes you made and quit the program.\n\n");
 }

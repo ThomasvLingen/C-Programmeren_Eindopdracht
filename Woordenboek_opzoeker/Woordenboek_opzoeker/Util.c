@@ -35,3 +35,11 @@ int getNextSpaceIndex(char str[]){
 	}
 	return -1;
 }
+
+//Makes sure the given stringArray is filled with NULLs so it's easy to use in other functions
+void nullifyStringArray(char stringArray[5][30]){
+	int i;
+	for (i = 0; i < 5; i++){
+		stringArray[i][0] = '\0';
+	}
+}
